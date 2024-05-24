@@ -1,0 +1,51 @@
+.popular {
+    margin-top: 150px;
+}
+
+.popular h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #f17860;
+}
+
+.movies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.movie {
+    width: 200px;
+    height: 400px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.movie img {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.movie img:hover {
+    transform: scale(1.1);
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.movie h3 {
+    margin-left: 8px;
+    margin-top: auto;
+    font-size: 32px;
+    color: rgb(236, 220, 0);
+}

@@ -1,0 +1,72 @@
+.main {
+    height: 500px;
+    width: 100%; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-img {
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    z-index: -8;
+}
+
+.heading {
+    font-size: 4em;
+    margin-top: -80px;
+    position: absolute;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #f17860;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 400px;
+    margin-top: 80px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px #f17860, 0 6px 20px #f17860;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#movie {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2em;
+    outline: none;
+}
+
+.search-btn {
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f17860;
+    color: white;
+    font-size: 1.2em;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.browse-popular button {
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: white;
+    font-size: 1.2em;
+    margin-top: 20px;
+    cursor: pointer;
+    position: absolute;
+    transform: translate(-300px, 150px);
+}
