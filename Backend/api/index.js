@@ -8,7 +8,7 @@ const corsOptions = {
   origin: "https://movie-explorer-in21.vercel.app", 
   optionsSuccessStatus: 200,
 };
-
+//
 app.use(cors(corsOptions));
 
 app.use(bodyParser.json());
