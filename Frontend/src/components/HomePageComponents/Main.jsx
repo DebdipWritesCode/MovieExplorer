@@ -10,7 +10,7 @@ const Main = () => {
   const handleFormSubmit = async (e) => {
     e.preventDefault()
     try {
-      const response = await fetch('https://movie-explorer-mu-ebon.vercel.app/movie/search', {
+      const response = await fetch('https://movie-explorer-backend.vercel.app/movie/search', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
