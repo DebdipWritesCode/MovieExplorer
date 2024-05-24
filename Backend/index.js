@@ -4,7 +4,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 
 const corsOptions = {
-  origin: "http://your-frontend-domain.com",
+  origin: "https://movie-explorer-in21.vercel.app/",
   optionsSuccessStatus: 200, 
 };
 
