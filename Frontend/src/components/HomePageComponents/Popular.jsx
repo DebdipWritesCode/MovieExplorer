@@ -8,7 +8,7 @@ const Popular = () => {
     const [loading, setLoading] = useState(true)
 
     function fetchMovies() {
-        fetch('http://localhost:3000/movie/popular')
+        fetch('https://movie-explorer-mu-ebon.vercel.app/movie/popular')
             .then(response => response.json())
             .then(data => {
                 setMovies(data.movies.results)
