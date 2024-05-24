@@ -13,7 +13,7 @@ app.use(cors(corsOptions));
 
 app.use(bodyParser.json());
 
-const movieRoutes = require("./routes/movie");
+const movieRoutes = require("../routes/movie");
 
 app.use("/movie", movieRoutes);
 
