@@ -3,36 +3,32 @@
       {
         "source": "/movie/(.*)",
         "headers": [
-            {
-                "key": "Access-Control-Allow-Credentials",
-                "value": "true"
-            },
-            {
-                "key": "Access-Control-Allow-Origin",
-                "value": "*"
-            },
-            {
-                "key": "Access-Control-Allow-Methods",
-                "value": "GET,POST,PUT,DELETE,OPTIONS"
-            },
-            {
-                "key": "Access-Control-Allow-Headers",
-                "value": "X-Requested-With, Content-Type, Accept, Origin, Authorization"
-            }
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          },
+          {
+            "key": "Access-Control-Allow-Methods",
+            "value": "GET,POST,PUT,DELETE,OPTIONS"
+          },
+          {
+            "key": "Access-Control-Allow-Headers",
+            "value": "X-Requested-With, Content-Type, Accept, Origin, Authorization"
+          }
         ]
       }
     ],
-    "builds": [
-        {
-            "src": "./index.js",
-            "use": "@vercel/node"
-        }
-       ],
-       "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/"
-        }
-       ]
+    "functions": {
+      "api/index.js": {
+        "runtime": "nodejs14.x",
+        "maxDuration": 30
+      }
+    },
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/api/index.js"
+      }
+    ]
   }
   
