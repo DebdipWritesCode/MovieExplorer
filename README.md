@@ -4,7 +4,6 @@
 Movie Explorer is your one-stop destination for exploring movies by title. Our web application simplifies movie discovery by focusing on efficient title searches. Powered by The Movie Database (TMDB) API, Movie Explorer fetches detailed movie information, including plot summaries and release dates. Start exploring movies effortlessly with Movie Explorer and uncover the perfect film for every occasion.
 
 
-
 ## Tech Stack
 
 **Client:** React, React-Router, CSS
